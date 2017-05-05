@@ -242,6 +242,80 @@ a.more {
 	    background: rgba(0,0,0,.5);
 		min-height: 360px;
 }
+h6 {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	font-size: 12px;
+}
+.price h6 {
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #828282;
+    font-weight: 400;
+}
+.price .col-4 {
+	padding: 0;
+	margin: 0;
+	width: 25%;
+}
+.table {
+	padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-left: 0;
+	z-index: 10;
+}
+.table:hover * {
+    color: #fff;
+	    z-index: 10;
+}
+.table:hover {
+    background-color: #0785f2;
+    margin-top: -20px;
+    z-index: 10;
+	color: white;
+    border: none;
+}
+.table:hover i.fa {
+	color: white;
+}
+.table:hover span.price {
+	color:white;
+	background-color: #0785f2;
+}
+.title-price {
+	margin-bottom: 70px;
+}
+ul.features {
+    margin: 0;
+    padding: 0;
+}
+.features li {
+	margin-top: 10px;
+}
+.price {
+	min-height: 720px;
+	background: white;
+}
+.price i.fa{
+	font-size: 40px;
+	    color: #d6d6d6;
+}
+span.price {
+    font-size: 70px;
+    font-weight: 300;
+    color: #333c4d;
+	transition: all .2s ease-in-out;
+}
+span.dolar {
+    vertical-align: top;
+    font-size: 17px;
+    color: #222;
+}
 footer {
 	min-height: 128px;
 	background: #222; 
@@ -255,8 +329,8 @@ footer  ul > li {
 
 }
 footer i.fa {
-	    color: #828282;
-		    padding-right: 15px;
+	color: #828282;
+	padding-right: 15px;
     font-size: 19px;
 }
 .social-icon {
@@ -291,11 +365,23 @@ footer img {
 		margin: 0;
 		padding: 0;
 	}
-	.post .col-3 {
+	.post .col-4 {
 		display: block;
 		width: 50%;
 	}
-	
+	.price {
+		min-height: 1150px;
+	}
+}
+@media (max-width: 940px) { 
+.price .col-4 {
+	display: block;
+	width: 40% ;
+	margin-left:5%;
+	margin-right: 5%;
+	margin-bottom: 40px;
+}
+
 }
 @media (max-width: 720px) {
 	.icon .col-4 {
@@ -331,7 +417,17 @@ footer img {
 	}
 }
 @media (max-width: 540px) {
-	
+	.price .col-4 {
+		display: block;
+		width: 80% ;
+		margin-left:10%;
+		margin-right: 10%;
+		margin-bottom: 40px;
+		
+	}
+	.table:hover {
+		margin-top: 0;
+	}
 	.post .col-3 {
 		display: block;
 		width: 100%;
@@ -368,6 +464,18 @@ footer img {
 	}
 	.gray-photo p {
 		font-size: 16px;
+	}
+	
+}
+@media (max-width: 420px) {
+	.main-message h1 {
+		font-size: 46px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	.gray-photo p {
+		font-size: 15px;
 	}
 	
 }
